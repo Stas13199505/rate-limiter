@@ -44,6 +44,7 @@ Create a FixedWindow rule to limit the number of requests:
 
 
 var history = new InMemoryFixedWindowHistory();
+
 var fixedWindowRule = new FixedWindow(history, maxCount: 5, window: 10); // Max 5 requests in 10 seconds
 
 
