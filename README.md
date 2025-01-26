@@ -45,6 +45,9 @@ Create a FixedWindow rule to limit the number of requests:
 
 var history = new InMemoryFixedWindowHistory();
 var fixedWindowRule = new FixedWindow(history, maxCount: 5, window: 10); // Max 5 requests in 10 seconds
+
+
+
 Step 3: Check if requests are allowed
 Now, you can create an identifier (e.g., IP address) and check if requests are allowed:
 
